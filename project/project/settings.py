@@ -39,11 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # подключаем ещё приложения
     'django.contrib.sites',
     'django.contrib.flatpages',
     'fpages',
+    'hyatt_restaurant',
 ]
 
 SITE_ID = 1
@@ -87,7 +86,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'Module_D.sqlite3',
     }
 }
 
