@@ -4,6 +4,14 @@ Full module D (Django Framework) SkillFactory project
 ---
 
 12.02.23.:
-Recreated repository for module D study project. Deleted previous one.
+Пересоздал репозиторий для хранения учебного проекта по всему модулю D.
+Django Framework. Предыдущий удалил. Теперь все обновления в данном проекте
+будут пушиться сюда.
+
+---
+
+15.02.23.:
+Закончено прохождение модуля D3. Приступил к выполнению итогового задания
+модуля в проекте NewsPortal, для которого создан отдельный репозиторий.
 
 ---
