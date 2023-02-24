@@ -41,9 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
+
     'fpages',
     'hyatt_restaurant',
     'simpleapp',
+    'django_filters',
 ]
 
 SITE_ID = 1
