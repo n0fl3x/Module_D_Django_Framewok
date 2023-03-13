@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.flatpages',
 
+    'django_apscheduler',
+
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -142,6 +144,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
 LOGIN_REDIRECT_URL = '/products'
+LOGOUT_REDIRECT_URL = '/accounts/login'
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
@@ -152,5 +155,23 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_FORMS = {"signup": "accounts.forms.CustomSignupForm"}
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'y0za@yandex.ru'
+EMAIL_HOST_PASSWORD = 'svkqdekehprryrxe'
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+EMAIL_SUBJECT_PREFIX = ''
+
+DEFAULT_FROM_EMAIL = 'y0za@yandex.ru'
+SERVER_EMAIL = 'y0za@yandex.ru'
+
+MANAGERS = (
+    ('Roman', 'PomkaNevzorov@gmail.ru'),
+    ('Roman_2', 'Y0ZA@yandex.ru'),
+)
