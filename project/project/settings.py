@@ -160,18 +160,18 @@ ACCOUNT_FORMS = {"signup": "accounts.forms.CustomSignupForm"}
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST = 'smtp.yandex.ru'
-EMAIL_PORT = 465
-EMAIL_HOST_USER = 'y0za@yandex.ru'
-EMAIL_HOST_PASSWORD = 'svkqdekehprryrxe'
+EMAIL_HOST = ''
+EMAIL_PORT =
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 EMAIL_SUBJECT_PREFIX = ''
 
-DEFAULT_FROM_EMAIL = 'y0za@yandex.ru'
-SERVER_EMAIL = 'y0za@yandex.ru'
+DEFAULT_FROM_EMAIL = ''
+SERVER_EMAIL = ''
 
 MANAGERS = (
-    ('Roman', 'PomkaNevzorov@gmail.ru'),
-    ('Roman_2', 'Y0ZA@yandex.ru'),
+    ('Roman', ''),
+    ('Roman_2', ''),
 )
